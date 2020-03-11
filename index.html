@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> </title>
+  </head>
+  <body>
+    <style> 
+#myDIV {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  color: white;
+}
+    </style>
+    <button onclick="myFunction()">Click me</button>
+    <button onclick="hide()">Click me to disappear</button>
+    <p id="demo"></p>
+    <br>
+    <p id="changewords" onclick="myFunction2()">Click here to change it .</p>
+    <br>
+    <button onclick="document.getElementById('myImage').src='images/image1.png'">1st image</button>
+    <img id="myImage" src="images/image1.png" style="width:200px">
+    <button onclick="document.getElementById('myImage').src='images/image2.png'">2nd image </button>
+    <br>
+    <br>
+    <button onclick="myFunction3()">Try it</button>
+
+    <div id="myDIV">
+    <h1>Hello</h1>
+    </div>
+
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello World";
+}
+    function hide() {
+      document.getElementById("demo").style.display = "none";
+}
+    function myFunction2() {
+      document.getElementById("changewords").innerHTML = "Good you change the words!";
+}
+    function myFunction3() {
+       document.getElementById("myDIV").style.backgroundColor = "lightblue";
+}
+    </script>
+  </body>
+</html>
