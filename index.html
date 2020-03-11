@@ -5,8 +5,8 @@
     <title> </title>
   </head>
   <body>
-    <style> 
-#myDIV {
+    <style>
+#mydiv {
   width: 300px;
   height: 300px;
   background-color: red;
@@ -20,16 +20,14 @@
     <p id="changewords" onclick="myFunction2()">Click here to change it .</p>
     <br>
     <button onclick="document.getElementById('myImage').src='images/image1.png'">1st image</button>
-    <img id="myImage" src="images/image1.png" style="width:200px">
-    <button onclick="document.getElementById('myImage').src='images/image2.png'">2nd image </button>
+    <img id="myimage" src="images/image1.png" style="width:200px">
+    <button onclick="document.getElementById('myimage').src='images/image2.png'">2nd image </button>
     <br>
     <br>
-    <button onclick="myFunction3()">Try it</button>
-
-    <div id="myDIV">
+    <button onclick="myFunction3()">Change background color</button>
+    <div id="mydiv">
     <h1>Hello</h1>
     </div>
-
   <script>
     function myFunction() {
       document.getElementById("demo").innerHTML = "Hello World";
@@ -41,7 +39,7 @@
       document.getElementById("changewords").innerHTML = "Good you change the words!";
 }
     function myFunction3() {
-       document.getElementById("myDIV").style.backgroundColor = "lightblue";
+       document.getElementById("mydiv").style.backgroundColor = "lightblue";
 }
     </script>
   </body>
